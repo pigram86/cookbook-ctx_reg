@@ -21,8 +21,10 @@ registry_key node['lang']['bar'] do
   values [{
     :name => "SeamlessFlags",
     :type => :dword,
-    :data => "0x40000"
+    :data => "00040000"
     }]
+    recursive true
+    action :create
 end
 
 
